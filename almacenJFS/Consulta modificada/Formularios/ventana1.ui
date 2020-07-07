@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Principal</class>
+ <widget class="QMainWindow" name="Principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Principal</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(87, 126, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>60</y>
+      <width>501</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bitstream Vera Sans Mono</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Proyecto PyQt! Base de datos para Almacen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAlmacen">
+    <property name="title">
+     <string>Almacen</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionCarga_Inicial"/>
+    <addaction name="actionMuestra_Producto"/>
+    <addaction name="actionModifica_Producto"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuMovimientos_de_Mercaderia">
+    <property name="title">
+     <string>Movimientos de Mercaderia</string>
+    </property>
+    <addaction name="actionVentas"/>
+    <addaction name="actionAltas"/>
+    <addaction name="actionModificaciones"/>
+    <addaction name="actionBajas"/>
+   </widget>
+   <addaction name="menuAlmacen"/>
+   <addaction name="menuMovimientos_de_Mercaderia"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCarga_Inicial">
+   <property name="text">
+    <string>Carga Inicial</string>
+   </property>
+  </action>
+  <action name="actionMuestra_Producto">
+   <property name="text">
+    <string>Muestra Producto</string>
+   </property>
+  </action>
+  <action name="actionModifica_Producto">
+   <property name="text">
+    <string>Modifica Producto</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionVentas">
+   <property name="text">
+    <string>Ventas</string>
+   </property>
+  </action>
+  <action name="actionAltas">
+   <property name="text">
+    <string>Altas</string>
+   </property>
+  </action>
+  <action name="actionConsultas">
+   <property name="text">
+    <string>Consultas</string>
+   </property>
+  </action>
+  <action name="actionModificaciones">
+   <property name="text">
+    <string>Modificaciones</string>
+   </property>
+  </action>
+  <action name="actionBajas">
+   <property name="text">
+    <string>Bajas</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

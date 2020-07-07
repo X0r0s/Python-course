@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'consulta.ui'
+#
+# Created by: PyQt5 UI code generator 5.10.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_form_Consulta(object):
+    def setupUi(self, form_Consulta):
+        form_Consulta.setObjectName("form_Consulta")
+        form_Consulta.resize(549, 354)
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        font.setBold(False)
+        font.setWeight(50)
+        form_Consulta.setFont(font)
+        self.centralwidget = QtWidgets.QWidget(form_Consulta)
+        self.centralwidget.setObjectName("centralwidget")
+        self.tab_Almacen = QtWidgets.QTableWidget(self.centralwidget)
+        self.tab_Almacen.setGeometry(QtCore.QRect(10, 10, 531, 281))
+        self.tab_Almacen.setRowCount(20)
+        self.tab_Almacen.setColumnCount(5)
+        self.tab_Almacen.setObjectName("tab_Almacen")
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setItalic(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.tab_Almacen.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setItalic(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.tab_Almacen.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setItalic(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.tab_Almacen.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setItalic(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.tab_Almacen.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setItalic(True)
+        font.setWeight(75)
+        item.setFont(font)
+        self.tab_Almacen.setHorizontalHeaderItem(4, item)
+        self.tab_Almacen.horizontalHeader().setCascadingSectionResizes(False)
+        self.btn_Consulta = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_Consulta.setGeometry(QtCore.QRect(460, 300, 85, 27))
+        self.btn_Consulta.setObjectName("btn_Consulta")
+        self.btn_Salir = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_Salir.setGeometry(QtCore.QRect(370, 300, 85, 27))
+        self.btn_Salir.setObjectName("btn_Salir")
+        form_Consulta.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(form_Consulta)
+        self.btn_Salir.pressed.connect(form_Consulta.close)
+        QtCore.QMetaObject.connectSlotsByName(form_Consulta)
+
+    def retranslateUi(self, form_Consulta):
+        _translate = QtCore.QCoreApplication.translate
+        form_Consulta.setWindowTitle(_translate("form_Consulta", "Almacén"))
+        item = self.tab_Almacen.horizontalHeaderItem(0)
+        item.setText(_translate("form_Consulta", "Artículo"))
+        item = self.tab_Almacen.horizontalHeaderItem(1)
+        item.setText(_translate("form_Consulta", "Descripción"))
+        item = self.tab_Almacen.horizontalHeaderItem(2)
+        item.setText(_translate("form_Consulta", "Peso"))
+        item = self.tab_Almacen.horizontalHeaderItem(3)
+        item.setText(_translate("form_Consulta", "Cantidad"))
+        item = self.tab_Almacen.horizontalHeaderItem(4)
+        item.setText(_translate("form_Consulta", "P Unit"))
+        self.btn_Consulta.setText(_translate("form_Consulta", "Consulta"))
+        self.btn_Salir.setText(_translate("form_Consulta", "Salir"))
+
